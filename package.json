@@ -9,7 +9,7 @@
     "start": "next start",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "icon": "svgr icons/* -d components/icons --icon"
+    "icon": "svgr icons -d components/icons --icon --replace-attr-values \"#fff=currentColor\""
   },
   "repository": {
     "type": "git",
@@ -36,6 +36,7 @@
     "@svgr/cli": "^5.5.0",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.0.1",
+    "prettier": "^2.2.1",
     "style-loader": "^2.0.0"
   }
 }
